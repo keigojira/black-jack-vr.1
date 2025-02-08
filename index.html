@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブラックジャック</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>ブラックジャック</h1>
+        <div id="player-hand">
+            <h2>プレイヤーの手札:</h2>
+            <div id="player-cards"></div>
+            <p>合計: <span id="player-score">0</span></p>
+        </div>
+        <div id="dealer-hand">
+            <h2>ディーラーの手札:</h2>
+            <div id="dealer-cards"></div>
+            <p>合計: <span id="dealer-score">0</span></p>
+        </div>
+        <div id="game-controls">
+            <button id="deal-button">カードを配る</button>
+            <button id="hit-button" disabled>ヒット</button>
+            <button id="stand-button" disabled>スタンド</button>
+        </div>
+        <div id="result">
+            <p id="result-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
